@@ -4,10 +4,14 @@ import { selectIsRefreshing } from "../../redux/auth/selectors";
 import { refreshUser } from "../../redux/auth/operations";
 import Layout from "../Layout/Layout";
 import { Route, Routes } from "react-router-dom";
-const HomePage = lazy(() => import("../../page/HomePage/HomePage"));
-const ContactsPage = lazy(() => import("../../page/ContactsPage/ContactsPage"));
-const RegisterPage = lazy(() => import("../../page/RegisterPage/RegisterPage"));
-const LoginPage = lazy(() => import("../../page/LoginPage/LoginPage"));
+const HomePage = lazy(() => import("../../pages/HomePage/HomePage"));
+const ContactsPage = lazy(() =>
+  import("../../pages/ContactsPage/ContactsPage")
+);
+const RegisterPage = lazy(() =>
+  import("../../pages/RegisterPage/RegisterPage")
+);
+const LoginPage = lazy(() => import("../../pages/LoginPage/LoginPage"));
 import RestrictedRoute from "../RestrictedRoute";
 import PrivateRoute from "../PrivateRoute";
 
