@@ -1,0 +1,10 @@
+.pageCоntainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageTitle {
+  width: 500px;
+  font-weight: 800;
+}

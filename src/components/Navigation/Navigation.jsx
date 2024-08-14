@@ -8,11 +8,27 @@ export default function Navigation() {
 
   return (
     <nav>
-      <NavLink className={css.link} to="/">
+      <NavLink
+        className={css.link}
+        to="/"
+        style={({ isActive }) =>
+          isActive
+            ? { textDecoration: "underline", fontWeight: "bold" }
+            : undefined
+        }
+      >
         Home
       </NavLink>
       {isLoggedIn && (
-        <NavLink className={css.link} to="/contacts">
+        <NavLink
+          className={css.link}
+          to="/contacts"
+          style={({ isActive }) =>
+            isActive
+              ? { textDecoration: "underline", fontWeight: "bold" }
+              : undefined
+          }
+        >
           Contacts
         </NavLink>
       )}

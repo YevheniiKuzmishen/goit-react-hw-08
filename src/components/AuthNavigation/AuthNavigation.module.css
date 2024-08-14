@@ -1,0 +1,12 @@
+.link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 800;
+  color: #2a363b;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.link:hover {
+  color: #12632d;
+}
