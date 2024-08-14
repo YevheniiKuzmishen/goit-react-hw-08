@@ -13,7 +13,11 @@ export default function Navigation() {
         to="/"
         style={({ isActive }) =>
           isActive
-            ? { textDecoration: "underline", fontWeight: "bold" }
+            ? {
+                textDecoration: "underline",
+                fontWeight: "bold",
+                color: "#12632d",
+              }
             : undefined
         }
       >
@@ -25,7 +29,11 @@ export default function Navigation() {
           to="/contacts"
           style={({ isActive }) =>
             isActive
-              ? { textDecoration: "underline", fontWeight: "bold" }
+              ? {
+                  textDecoration: "underline",
+                  fontWeight: "bold",
+                  color: "#12632d",
+                }
               : undefined
           }
         >

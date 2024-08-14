@@ -9,7 +9,11 @@ export default function AuthNavigation() {
         to="register"
         style={({ isActive }) =>
           isActive
-            ? { textDecoration: "underline", fontWeight: "bold" }
+            ? {
+                textDecoration: "underline",
+                fontWeight: "bold",
+                color: "#12632d",
+              }
             : undefined
         }
       >
@@ -20,7 +24,11 @@ export default function AuthNavigation() {
         to="login"
         style={({ isActive }) =>
           isActive
-            ? { textDecoration: "underline", fontWeight: "bold" }
+            ? {
+                textDecoration: "underline",
+                fontWeight: "bold",
+                color: "#12632d",
+              }
             : undefined
         }
       >
